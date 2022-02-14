@@ -1,0 +1,4 @@
+<form>
+  <app-child (isChild1FormValid)="enableSubmitButton($event)"></app-child>
+  <button type="submit" [disabled]="!isChild1FormValid">Submit</button>
+</form>
